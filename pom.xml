@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <name>Cacheable Assets for Dropwizard 4</name>
+  <description>AssetsBundle which adds HTTP Header cache fields to the HTTP Response of static asset resource files.</description>
+  <url>https://github.com/dougboberg/dropwizard-cacheable-assets</url>
+  <groupId>com.ikonetics</groupId>
+  <artifactId>dropwizard-cacheable-assets</artifactId>
+  <version>1.0</version>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <dropwizard.version>4.0.0</dropwizard.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.dropwizard</groupId>
+      <artifactId>dropwizard-assets</artifactId>
+      <version>${dropwizard.version}</version>
+    </dependency>
+  </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io/#com.ikonetics/dropwizard-cacheable-assets</url>
+    </repository>
+  </distributionManagement>
+
+  <developers>
+    <developer>
+      <name>Douglas Boberg</name>
+      <organization>Ikonetics</organization>
+      <organizationUrl>https://www.ikonetics.com/</organizationUrl>
+      <properties>
+        <mastodon>https://hachyderm.io/@gauche_douglas</mastodon>
+        <twitter>https://twitter.com/douglasboberg</twitter>
+      </properties>      
+    </developer>
+  </developers>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/dougboberg/dropwizard-cacheable-assets/issues</url>
+  </issueManagement>
+
+  <scm>
+    <connection>scm:git:git://github.com/dougboberg/dropwizard-cacheable-assets.git</connection>
+    <developerConnection>scm:git:ssh://github.com:dougboberg/dropwizard-cacheable-assets.git</developerConnection>
+    <url>http://github.com/dougboberg/dropwizard-cacheable-assets/tree/main</url>
+  </scm>
+
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>https://spdx.org/licenses/MIT.html</url>
+    </license>
+  </licenses>
+</project>
